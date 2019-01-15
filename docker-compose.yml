@@ -21,7 +21,6 @@ services:
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:rw
       - ./logstash/pipeline:/usr/share/logstash/pipeline:rw
-      - ./logstash/mysql-driver:/usr/share/logstash/mysql-driver:rw
     ports:
       - "5000:5000"
     environment:
